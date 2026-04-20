@@ -36,7 +36,7 @@ export default function BKApp() {
           </p>
         </div>
         <div className="bg-white border-4 border-black text-black py-2 px-5 rounded-full text-sm font-black flex items-center gap-2 shadow-[4px_4px_0_0_#000] uppercase animate-pulse">
-            <span>🎮</span> 16 Missions
+            <span>🎮</span> {bkData.reduce((acc, cat) => acc + cat.questions.length, 0)} Missions
         </div>
       </header>
 
